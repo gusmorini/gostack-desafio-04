@@ -15,6 +15,10 @@ input, button {
   outline: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 ul {
   list-style: none;
 }
@@ -77,16 +81,34 @@ a.profile img {
   margin: 20px 0px;
   padding: 20px;
   border-radius: 5px;
-  position: relative;
-  padding-left: 65px;
   font-size: 14px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  height: 100%;
+
 }
 
-.post .title{
-  display: block;
+.post div.author{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.post div.title{
   height: 30px;
+  margin: 10px 0px;
   line-height: 17px;
-  margin-bottom: 10px;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+
+
 }
 
 .post span {
@@ -97,28 +119,50 @@ a.profile img {
 
 .post small {
   font-size: 11px;
-  display: block;
   font-weight: normal;
   color: #d7d7d7;
 }
 
-.post img {
+.post img{
   width: 35px;
   height: 35px;
   border-radius: 50%;
-  position: absolute;
-  left: 15px;
+  margin-right: 20px;
 }
 
-.post p{
-  border-bottom: 1px solid #EEEEEE;
-  padding-bottom: 20px;
-  margin-bottom: 20px;
+.post > p{
   color: #898989;
+  line-height: 20px;
 }
 
-.comment {
-  margin: 5px 0px;
+.post div.actions{
+  padding-bottom: 10px;
+  margin: 10px 0px;
+  border-bottom: 1px solid #EEEEEE;
+  text-align: right;
+  width: 100%;
+}
+
+div.actions a{
+  margin-left: 10px;
+  user-select: none;
+  color: #4A90E2;
+  font-weight: bold;
+}
+
+div.actions a:hover {
+  color: rgb(32, 92, 160);
+}
+
+div.comment { 
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  
+  margin-top: 10px;
+
 }
 
 .comment p {
@@ -127,4 +171,6 @@ a.profile img {
   border-radius: 20px;
   color: #616161;
   font-size: 13px;
+  line-height: 20px;
+
 }
