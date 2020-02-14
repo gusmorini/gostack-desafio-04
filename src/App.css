@@ -74,10 +74,9 @@ a.profile img {
 .post{
   box-shadow: 1px 1px 10px rgba(0,0,0,0.1);
   background: #fff;
-  margin: 10px 0px;
-  padding: 15px;
+  margin: 20px 0px;
+  padding: 20px;
   border-radius: 5px;
-  line-height: 24px;
   position: relative;
   padding-left: 65px;
   font-size: 14px;
@@ -85,7 +84,6 @@ a.profile img {
 
 .post .title{
   display: block;
-  border: 1px sold red;
   height: 30px;
   line-height: 17px;
   margin-bottom: 10px;
@@ -114,8 +112,8 @@ a.profile img {
 
 .post p{
   border-bottom: 1px solid #EEEEEE;
-  padding-bottom: 15px;
-  margin-bottom: 15px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
   color: #898989;
 }
 
@@ -125,8 +123,8 @@ a.profile img {
 
 .comment p {
   background: #EEEEEE;
-  padding: 15px;
-  border-radius: 10px;
+  padding: 16px;
+  border-radius: 20px;
   color: #616161;
   font-size: 13px;
 }
