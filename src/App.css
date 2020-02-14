@@ -11,7 +11,7 @@ body {
   -webkit-font-smoothing: antialiased !important;
 }
 
-input, button {
+input, button, a {
   outline: 0;
 }
 
@@ -35,44 +35,42 @@ div.postlist {
 
 header {
   background: #4A90E2;
-  height: 64px;
   color: #fff;
   padding: 0 10px;
 }
 
 header nav.menu {
-  line-height: 64px;
+
+  height: 64px;
+  
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  flex-basis: auto;
   width: 100%;
+
 }
 
-header img.logo {
+a.logo img {
   width: 121px;
   height: 24px;
 }
 
 a.profile{
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
   cursor: pointer;
   user-select: none;
+  color: #fff;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+
 }
 
 a.profile span {
-  font-size: 15px;
-  font-weight: bold;
-  margin-right: 10px;
-}
-
-a.profile img {
-  width: 28px;
-  height: 28px;
+  font-size: 24px;
+  margin-left: 10px;
 }
 
 .post{
