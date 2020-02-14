@@ -1,1 +1,1 @@
-<img src="/gusmorini/gostack-desafio-04/raw/master/.github/facebook.png">
+<img src="/gusmorini/gostack-desafio-04/raw/master/.github/face1.jpeg">
