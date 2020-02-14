@@ -139,15 +139,19 @@ a.profile img {
   padding-bottom: 10px;
   margin: 10px 0px;
   border-bottom: 1px solid #EEEEEE;
-  text-align: right;
   width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+
 }
 
 div.actions a{
   margin-left: 10px;
   user-select: none;
   color: #4A90E2;
-  font-weight: bold;
 }
 
 div.actions a:hover {

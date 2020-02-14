@@ -3,6 +3,14 @@ import propTypes from 'prop-types';
 
 import Comment from './Comment';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faThumbsUp, faComment, faShare } from '@fortawesome/free-solid-svg-icons';
+
+const iconLike = <FontAwesomeIcon icon={faThumbsUp} />;
+const iconComment = <FontAwesomeIcon icon={faComment} />;
+const iconShare = <FontAwesomeIcon icon={faShare} />;
+
+
 function Post({ data, ...rest }) {
   return (
     <div className="post" {...rest} >
@@ -16,8 +24,9 @@ function Post({ data, ...rest }) {
       <p>{data.content}</p>
 
       <div className='actions'>
-        <a href="#">comentar</a>
-        <a href="#">compartilhar</a>
+        <a href="#">curtir {iconLike}</a>
+        <a href="#">comentar {iconComment}</a>
+        <a href="#">compartilhar {iconShare} </a>
       </div>
 
       {!!data.comments === true && data.comments.map(c => <Comment key={c.id} comment={c} />)}
